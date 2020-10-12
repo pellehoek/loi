@@ -1,0 +1,2 @@
+# loi
+Exercises for LOI
