@@ -1,0 +1,47 @@
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tekst effecten</title>
+</head>
+<body>
+    
+    <script>
+
+        /*
+        Roller Coaster Script-
+        By JavaScript Kit
+        Over 200+ free scripts here!
+        */
+        
+        var fs=1
+        var direction="right"
+        function rollertext(whichone){
+        var thetext=whichone
+        for (i=0;i<thetext.length;i++){
+        document.write(thetext.charAt(i).fontsize(fs))
+        
+        if (fs<7&&direction=="right")
+        fs++
+        else if (fs==7){
+        direction="left"
+        fs--
+        }
+        else if (fs==1){
+        direction="right"
+        fs++
+        }
+        else if (fs>1&&direction=="left")
+        fs--
+        
+        }
+        }
+        //Change below text to your won
+        rollertext("Wie kent de striphelden Donald Duck, Mickey Moiuse, Popeye, Suske en Wiske?")
+        </script>
+        
+        <p align="center"><font face="arial" size="-2">This free script provided by</font><br>
+        <font face="arial, helvetica" size="-2"><a href="http://javascriptkit.com">JavaScript
+        Kit</a></font></p>
+</body>
+</html>
