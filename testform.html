@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testformulier</title>
+</head>
+<body>
+    <h1>Dit is een testformulier</h1>
+    <form action="">
+        <div>
+            <label for="naame">Labeltekst:</label>
+            <input id="naam" name="naam" type="text" autocapitalize="words">
+        </div>
+        <div>
+            <label for="veld1">Email <small>(verplicht)</small>:</label>
+            <input id="veld1" name="email" type="email" autofocus placeholder="email@voorbeeld.nl" required>
+        </div>
+        <div>
+            <label for="veld2">Postcode:</label>
+            <input id="veld2" name="postcode" type="text" pattern="[0-9]{4}\s[A-Z]{2}" title="Een postcode bestaat uit 4 cijfers, een spatie en 2 hoofdletters">
+        </div>
+        <div>
+            <label for="iban">IBAN:</label>
+            <input id="iban" name="iban" type="text" pattern="[A-Z]{2}[0-9]{2}[A-Z]{4}[0-9]{10}" title="Een IBAN bestaat uit 2 hoofdletters, 2, cijfers, 4 hoofdletters en 10 cijfers">
+        </div>
+        <div>
+            <label for="gegeven">Labeltekst:</label>
+            <input id="gegeven" name="gegeven" type="text" readonly value="Dit mag je niet aanpassen">
+        </div>
+        <div>
+            <label for="uit">Labeltekst:</label>
+            <input id="uit" name="uit" type="text" disabled value="Dit veld is uitgeschakeld">
+        </div>
+        <div>
+            <label for="aantal">Aantal:</label>
+            <input id="aantal" name="aantal" type="number" value="2" min="2" max="10" step="2">
+        </div>
+        <input type="submit" value="Insturen">
+    </form>
+</body>
+</html>
