@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquete</title>
+</head>
+<body>
+    <h1>Enquete</h1>
+    <p>Vul deze vragenlijst naar waarheid in.</p>
+    <form action="">
+        <div>
+            <label for="name">Naam <small>(verplicht)</small>:</label>
+            <input id="naam" name="naam" type="text" autocapitalize="words" placeholder="Voornaam + Achternaam" required>
+        </div>
+        <div>
+            <label for="veld1">Email <small>(verplicht)</small>:</label>
+            <input id="veld1" name="email" type="email" autofocus placeholder="email@voorbeeld.nl" required>
+        </div>
+        <div>
+            <label for="aero"></label>
+            <fieldset id="aero">
+                <legend>Aero gaat voor alles</legend>
+                <label for="opt1"><input id="opt1" type="radio" name="aero" value="ja" required>Ja</label>
+                <label for="opt2"><input id="opt2" type="radio" name="aero" value="nee">Nee</label>
+                <label for="opt3"><input id="opt3" type="radio" name="aero" value="gm">Geen mening</label>
+            </fieldset>
+            <label for="aero"></label>
+            <fieldset id="ligfiets">
+                <legend>Ligfietsen zijn stom</legend>
+                <label for="opt1"><input id="opt1" type="radio" name="lf" value="ja" required>Ja</label>
+                <label for="opt2"><input id="opt2" type="radio" name="lf" value="nee">Nee</label>
+                <label for="opt3"><input id="opt3" type="radio" name="lf" value="gm">Geen mening</label>
+            </fieldset>
+        </div>
+        <input type="submit" value="Insturen">
+    </form>
+</body>
+</html>

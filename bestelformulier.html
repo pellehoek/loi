@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestelformulier</title>
+</head>
+<body>
+    <h1>Bestelformulier</h1>
+    <p>Kies hier welke pizza je wilt!</p>
+    <form action="">
+        <div>
+            <label for="name">Naam <small>(verplicht)</small>:</label>
+            <input id="naam" name="naam" type="text" autocapitalize="words" placeholder="Voornaam + Achternaam" required>
+        </div>
+        <div>
+            <label for="veld1">Email <small>(verplicht)</small>:</label>
+            <input id="veld1" name="email" type="email" autofocus placeholder="email@voorbeeld.nl" required>
+        </div>
+        <div>
+            <fieldset id="bestelling">
+                <legend>Kies je pizza:</legend>
+                <fieldset>
+                    <legend for="bodem">Kies je bodem</legend>
+                    <select name="bodem" id="bodem" required>
+                        <option value="standaard">Standaard</option>
+                        <option value="volkoren">Volkoren</option>
+                        <option value="bloemkool">Bloemkool</option>
+                        <option value="extradun">Extra dun</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend for="saus">Kies je saus</legend>
+                    <select name="saus" id="saus" required>
+                        <option value="klassiek">Klassiek</option>
+                        <option value="spicy">Spicy</option>
+                        <option value="bianco">Bianco</option>
+                        <option value="pesto">Pesto</option>
+                    </select>
+                </fieldset>
+                <fieldset id="toppings">
+                    <legend for="toppings">Kies je toppings (meerdere mogelijk)</legend>
+                    <label for="opt1"><input id="opt1" type="checkbox" name="pepperoni" value="pepperoni">pepperoni</label>
+                    <label for="opt2"><input id="opt2" type="checkbox" name="champignons" value="champignons">champignons</label>
+                    <label for="opt3"><input id="opt3" type="checkbox" name="ui" value="ui">ui</label>
+                    <label for="opt4"><input id="opt4" type="checkbox" name="paprika" value="paprika">paprika</label>
+                </fieldset>
+            </fieldset>
+        </div>
+        <input type="submit" value="Insturen">
+    </form>
+</body>
+</html>

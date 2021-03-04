@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oefenformulier 4</title>
+</head>
+<body>
+    <h1>Oefenformulier 3: vakgebieden</h1>
+    <form action="" method="post">
+        <div>
+            <label for="voornaam">Voornaam <small>(verplicht)</small></label>
+            <input id="voornaam" name="voornaam" type="text" autocapitalize="words" required>
+        </div>
+        <div>
+            <label for="tussenvoegsel">Tussenvoegsel(s)</label>
+            <input type="text" name="tussenvoegsel" id="tussenvoegsel">
+        </div>
+        <div>
+            <label for="achternaam">Achternaam <small>(verplicht)</small></label>
+            <input id="achternaam" name="achternaam" type="text" autocapitalize="words" required>
+        </div>
+        <div>
+            <label for="email">E-mailadres <small>(voorbeeld@domein.nl)</small></label>
+            <input type="email" name="email" id="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$">
+        </div>
+        <div>
+            <label for="ww">Wachtwoord</label>
+            <input type="password" name="ww" id="ww">
+        </div>
+        <div>
+            <fieldset id="geslacht">
+                <legend>Geslacht</legend>
+                <label for="opt1"><input type="radio" id="opt1" name="geslacht" value="M" required>M</label>
+                <label for="opt2"><input type="radio" id="opt2" name="geslacht" value="V">V</label>
+            </fieldset>
+        </div>
+        <div>
+            <label for="modules">Module</label>
+            <select name="modules" id="modules">
+                <optgroup label="hobby">
+                    <option value="filosofie">Filosofie</option>
+                    <option value="voetverzorging">Voetverzorging</option>
+                    <option value="beleggen">Beleggen voor beginners</option>
+                </optgroup>
+                <optgroup label="talen">
+                    <option value="spaans">Spaans voor beginners</option>
+                    <option value="engels">Engels voor gevordereden</option>
+                </optgroup>
+            </select>
+        </div>
+        <input type="submit" value="Insturen">
+    </form>
+</body>
+</html>

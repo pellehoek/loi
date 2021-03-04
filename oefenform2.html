@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oefenformulier 2</title>
+</head>
+<body>
+    <h1>Oefenformulier 2: email en wachtwoord</h1>
+    <form action="" method="get">
+        <div>
+            <label for="voornaam">Voornaam <small>(verplicht)</small></label>
+            <input id="voornaam" name="voornaam" type="text" autocapitalize="words" required>
+        </div>
+        <div>
+            <label for="tussenvoegsel">Tussenvoegsel(s)</label>
+            <input type="text" name="tussenvoegsel" id="tussenvoegsel">
+        </div>
+        <div>
+            <label for="achternaam">Achternaam <small>(verplicht)</small></label>
+            <input id="achternaam" name="achternaam" type="text" autocapitalize="words" required>
+        </div>
+        <div>
+            <label for="email">E-mailadres <small>(voorbeeld@domein.nl)</small></label>
+            <input type="email" name="email" id="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$">
+        </div>
+        <div>
+            <label for="ww">Wachtwoord</label>
+            <input type="password" name="ww" id="ww">
+        </div>
+        <input type="submit" value="Insturen">
+    </form>
+</body>
+</html>

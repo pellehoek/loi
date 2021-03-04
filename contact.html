@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactformulier</title>
+</head>
+<body>
+    <h1>Contact</h1>
+    <p>Laat hier een bericht achter voor de websitebouwer.</p>
+    <form action="">
+        <div>
+            <label for="name">Naam <small>(verplicht)</small>:</label>
+            <input id="naam" name="naam" type="text" autocapitalize="words" placeholder="Voornaam + Achternaam" required>
+        </div>
+        <div>
+            <label for="veld1">Email <small>(verplicht)</small>:</label>
+            <input id="veld1" name="email" type="email" autofocus placeholder="email@voorbeeld.nl" required>
+        </div>
+        <div>
+            <label for="opmerking">Opmerking:</label>
+            <textarea id="opmerking" name="opmerking" rows="5"></textarea>
+        </div>
+        <input type="submit" value="Insturen">
+    </form>
+</body>
+</html>
